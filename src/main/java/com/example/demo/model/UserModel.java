@@ -3,7 +3,7 @@ import jakarta.persistence.*;
 
 
 @Entity
-@Table(name = "users")
+@Table(name = "user_model")
 public class UserModel {
     @Id
     private Long id;

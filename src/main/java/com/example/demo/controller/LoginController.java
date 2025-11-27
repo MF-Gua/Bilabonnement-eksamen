@@ -8,6 +8,16 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class LoginController {
 
+    @GetMapping("/login")
+    public String login() {
+        return "pages/login";
+    }
+
+    @GetMapping("/testPage")
+    public String testPage() {
+        return "pages/testPage";
+    }
+
     @Autowired
     private UserService userService;
 
@@ -15,7 +25,7 @@ public class LoginController {
     public String login(@RequestParam String username,
                         @RequestParam String password) {
         if (userService.checkLogin(username, password)) {
-            return "redirect:/home";
+            return "redirect:/testPage";
         } else {
             return "redirect:/login";
         }
