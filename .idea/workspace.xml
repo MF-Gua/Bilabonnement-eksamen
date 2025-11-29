@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc63d975-b925-4995-bd31-272d436960eb" name="Changes" comment="Fixed nogen date attributtes som lavede problemer">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/damagereport.html" afterDir="false" />
+    <list default="true" id="cc63d975-b925-4995-bd31-272d436960eb" name="Changes" comment="Tilføjet thymeleaf i damagereport.html og tilføjet en JDBC connector .jar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +42,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -61,6 +64,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.DemoApplication.executor": "Run",
     "git-widget-placeholder": "main",
@@ -130,7 +134,7 @@
       <workItem from="1764253584158" duration="336000" />
       <workItem from="1764253938965" duration="2613000" />
       <workItem from="1764414247728" duration="12015000" />
-      <workItem from="1764435163101" duration="165000" />
+      <workItem from="1764435163101" duration="2280000" />
     </task>
     <task id="LOCAL-00001" summary="Oprettet Customer controller model og repo samt lease controller model og repo. Nu skal det bare prøves af for at se om det virker. Til hvem end der gennemgår det her commit glhf.">
       <option name="closed" value="true" />
@@ -156,7 +160,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764435264931</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tilføjet thymeleaf i damagereport.html og tilføjet en JDBC connector .jar">
+      <option name="closed" value="true" />
+      <created>1764435367486</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764435367486</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Tilføjet thymeleaf i damagereport.html og tilføjet en JDBC connector .jar">
+      <option name="closed" value="true" />
+      <created>1764435522750</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764435522750</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +200,8 @@
     <MESSAGE value="Opsat Login således at der kan laves test på det" />
     <MESSAGE value="Oprettet Customer controller model og repo samt lease controller model og repo. Nu skal det bare prøves af for at se om det virker. Til hvem end der gennemgår det her commit glhf." />
     <MESSAGE value="Fixed nogen date attributtes som lavede problemer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed nogen date attributtes som lavede problemer" />
+    <MESSAGE value="Tilføjet thymeleaf i damagereport.html og tilføjet en JDBC connector .jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet thymeleaf i damagereport.html og tilføjet en JDBC connector .jar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
