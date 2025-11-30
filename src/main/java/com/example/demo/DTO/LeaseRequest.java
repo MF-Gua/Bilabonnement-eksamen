@@ -34,4 +34,5 @@ public class LeaseRequest {
     public Vehicle getVehicle() {
         return vehicle;
     }
+
 }

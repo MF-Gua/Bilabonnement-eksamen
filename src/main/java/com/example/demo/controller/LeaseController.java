@@ -1,6 +1,8 @@
 package com.example.demo.controller;
 
 import com.example.demo.DTO.LeaseRequest;
+import com.example.demo.repository.CustomerJDBCRepository;
+import com.example.demo.repository.LeaseJDBCRepository;
 import com.example.demo.service.LeaseService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 public class LeaseController {
 
     private final LeaseService leaseService;
+
 
     public LeaseController(LeaseService leaseService) {
         this.leaseService = leaseService;
@@ -25,13 +28,31 @@ public class LeaseController {
 
     // Create lease håndteres igennem leaseRequst da formen indeholder både data for lease og customer
     // som håndteres samtidig var det nødvendigt at lave en DTO for at undgå concurrency problemer.
+//    @PostMapping
+//    public String createLeaseAndAddToDB(@ModelAttribute LeaseRequest leaseRequest, Model model) {
+//
+//        try {
+//            leaseService.createAndSaveLease(leaseRequest);
+//            model.addAttribute("success", true);
+//            model.addAttribute("leaseRequest", new LeaseRequest());
+//        }catch (IllegalArgumentException e){
+//            model.addAttribute("errorMessage", e.getMessage());
+//            model.addAttribute("success", false);
+//            //Hvis der indtastet forkert reg nr. slettes alt data i formen ikke
+//            model.addAttribute("leaseRequest", leaseRequest);
+//        } catch (Exception e) {
+//            model.addAttribute("success", false);
+//            model.addAttribute("errorMessage", "unexpected error");
+//        }
+//        return "pages/lease";
+//    }
+
     @PostMapping
     public String createLeaseAndAddToDB(@ModelAttribute LeaseRequest leaseRequest, Model model) {
 
         try {
-            leaseService.createLease(leaseRequest);
-            model.addAttribute("success", true);
-            model.addAttribute("leaseRequest", new LeaseRequest());
+            leaseService.createAndSaveLeaseJDBC(leaseRequest);
+
         }catch (IllegalArgumentException e){
             model.addAttribute("errorMessage", e.getMessage());
             model.addAttribute("success", false);

@@ -20,7 +20,6 @@ public class LeaseModel {
     @JoinColumn(name = "vei_id")
     private Vehicle vehicle;
 
-
     private LocalDate startDate;
     private LocalDate endDate;
     private double totalPrice;
