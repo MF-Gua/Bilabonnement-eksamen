@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc63d975-b925-4995-bd31-272d436960eb" name="Changes" comment="Tilføjet sql mappe under ressources til vores sql scri">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/customer.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/damagereport.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/leasecontract.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/vehicle.sql" afterDir="false" />
+    <list default="true" id="cc63d975-b925-4995-bd31-272d436960eb" name="Changes" comment="Tilføjet sql mappe under ressources til vores sql scripts (masterscript + individuelle tables)">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/DBscript.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/DBscript.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/damagereport.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/damagereport.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/vehicle.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/vehicle.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -140,7 +139,8 @@
       <workItem from="1764253938965" duration="2613000" />
       <workItem from="1764414247728" duration="12015000" />
       <workItem from="1764435163101" duration="3707000" />
-      <workItem from="1764443828223" duration="699000" />
+      <workItem from="1764443828223" duration="1014000" />
+      <workItem from="1764504410180" duration="1140000" />
     </task>
     <task id="LOCAL-00001" summary="Oprettet Customer controller model og repo samt lease controller model og repo. Nu skal det bare prøves af for at se om det virker. Til hvem end der gennemgår det her commit glhf.">
       <option name="closed" value="true" />
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764435522750</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tilføjet sql mappe under ressources til vores sql scripts (masterscript + individuelle tables)">
+      <option name="closed" value="true" />
+      <created>1764444560615</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764444560615</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +215,8 @@
     <MESSAGE value="Oprettet Customer controller model og repo samt lease controller model og repo. Nu skal det bare prøves af for at se om det virker. Til hvem end der gennemgår det her commit glhf." />
     <MESSAGE value="Fixed nogen date attributtes som lavede problemer" />
     <MESSAGE value="Tilføjet thymeleaf i damagereport.html og tilføjet en JDBC connector .jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet thymeleaf i damagereport.html og tilføjet en JDBC connector .jar" />
+    <MESSAGE value="Tilføjet sql mappe under ressources til vores sql scripts (masterscript + individuelle tables)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tilføjet sql mappe under ressources til vores sql scripts (masterscript + individuelle tables)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
