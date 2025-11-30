@@ -7,4 +7,5 @@ CREATE TABLE Vehicle (
                          brand VARCHAR(10) NOT NULL,
                          model VARCHAR(10) NOT NULL,
                          model_year int(10) NOT NULL
+
 );
