@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<header th:fragment="header">
+  <nav class="nav-bar">
+    <a href="/" class="logo">firma logo</a>
+        <img th:src="@{/images/logo.png}" alt="MySite Logo">
+      <ul class="nav-links">
+        <li><a th:href="@{/lease}">opret lease</a></li>
+        <li><a th:href="@{/damagereport}">Skade registreringz</a></li>
+        <li><a th:href="@{/currentleasingcontracts}">Nuværende udlejninger</a></li>
+      </ul>
+
+  </nav>
+</header>
+
+
+</body>
+</html>

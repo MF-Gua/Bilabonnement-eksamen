@@ -1,0 +1,28 @@
+.nav-bar{
+    background-color: rgb(247,247,247);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo{
+    height: 40px;
+    width: auto;
+    horiz-align: left;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    font-size: 10px;
+}
