@@ -4,32 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc63d975-b925-4995-bd31-272d436960eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/Database.sql" afterDir="false" />
+    <list default="true" id="cc63d975-b925-4995-bd31-272d436960eb" name="Changes" comment="Added employee sql file&#10;Made Hardcoded data for customer, employee and vehicles in data.sql&#10;grouped all sql files in one sql file called Schema.sql&#10;made a global way to connect to database in application.properties&#10;finished leaseContract html file&#10;created leaseContract css file&#10;removed/commented out a lot of redundant code&#10;fixed/added a bunch of other code for some controllers, models, repositories and services, lol cba writing anymore...">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DTO/LeaseRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DTO/LeaseRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/LeaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/LeaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/controller/VehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/CustomerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/CustomerModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/LeaseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/LeaseModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/model/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/CustomerJDBCRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/CustomerJDBCRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/LeaseJDBCRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/LeaseJDBCRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/VehicleJDBCRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/VehicleJDBCRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/repository/VehicleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/LeaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/LeaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/service/VehicleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/service/VehicleService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/DBscript.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/customer.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/Customer.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/damagereport.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/DamageReport.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/leasecontract.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/LeaseContract.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/vehicle.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/Vehicle.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/lease.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/lease.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/demo/CreateLeaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/demo/CreateLeaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/leaseContract.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/leaseContract.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/pages/leaseContract.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/pages/leaseContract.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,12 +41,12 @@
     &quot;assignee&quot;: &quot;keamanden&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/keamanden/Bilabonnement-eksamen.git",
-    "accountId": "2eaa7f5d-16d9-46b5-a778-2ffbc472fc17"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/keamanden/Bilabonnement-eksamen.git&quot;,
+    &quot;accountId&quot;: &quot;2eaa7f5d-16d9-46b5-a778-2ffbc472fc17&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$USER_HOME$/.jdks/graalvm-jdk-21.0.8/lib/src.zip!/java.xml/com/sun/org/apache/xml/internal/utils/Constants.java" root0="SKIP_INSPECTION" />
   </component>
@@ -75,49 +58,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Database Script.DBscript.sql.executor": "Run",
-    "Database Script.Database.sql.executor": "Run",
-    "Database Script.customer.sql.executor": "Run",
-    "Database Script.damagereport.sql.executor": "Run",
-    "Database Script.data.sql.executor": "Run",
-    "Database Script.employee.sql.executor": "Run",
-    "Database Script.leasecontract.sql.executor": "Run",
-    "Database Script.vehicle.sql.executor": "Run",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.DemoApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/1/DataGripProjects/Bilabonnement",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Database Script.DBscript.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.Database.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.customer.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.damagereport.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.data.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.employee.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.leasecontract.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.vehicle.sql.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;haider-test&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/1/DataGripProjects/Bilabonnement&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql",
-      "oracle"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;,
+      &quot;oracle&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "b6e81a36-578c-45aa-9150-f4d524a87dc3",
-      "25c3164b-47eb-4bf6-a459-c9f1fa5059bf"
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;b6e81a36-578c-45aa-9150-f4d524a87dc3&quot;,
+      &quot;25c3164b-47eb-4bf6-a459-c9f1fa5059bf&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Java Projects\1 semester fresh\Small_programs_1\src\Bilabonnement-eksamen\src\main\resources" />
@@ -176,6 +159,7 @@
     <attachedChunks>
       <set>
         <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
       </set>
     </attachedChunks>
   </component>
@@ -186,8 +170,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1763990295559</updated>
-      <workItem from="1764787536395" duration="31992000" />
+      <workItem from="1764787536395" duration="32252000" />
+      <workItem from="1764820052704" duration="174000" />
+      <workItem from="1764820413066" duration="207000" />
+      <workItem from="1764850342808" duration="7555000" />
+      <workItem from="1764877297127" duration="12444000" />
     </task>
+    <task id="LOCAL-00001" summary="Added employee sql file&#10;Made Hardcoded data for customer, employee and vehicles in data.sql&#10;grouped all sql files in one sql file called Schema.sql&#10;made a global way to connect to database in application.properties&#10;finished leaseContract html file&#10;created leaseContract css file&#10;removed/commented out a lot of redundant code&#10;fixed/added a bunch of other code for some controllers, models, repositories and services, lol cba writing anymore...">
+      <option name="closed" value="true" />
+      <created>1764819677590</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764819677590</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,5 +205,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Added employee sql file&#10;Made Hardcoded data for customer, employee and vehicles in data.sql&#10;grouped all sql files in one sql file called Schema.sql&#10;made a global way to connect to database in application.properties&#10;finished leaseContract html file&#10;created leaseContract css file&#10;removed/commented out a lot of redundant code&#10;fixed/added a bunch of other code for some controllers, models, repositories and services, lol cba writing anymore..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added employee sql file&#10;Made Hardcoded data for customer, employee and vehicles in data.sql&#10;grouped all sql files in one sql file called Schema.sql&#10;made a global way to connect to database in application.properties&#10;finished leaseContract html file&#10;created leaseContract css file&#10;removed/commented out a lot of redundant code&#10;fixed/added a bunch of other code for some controllers, models, repositories and services, lol cba writing anymore..." />
   </component>
 </project>
