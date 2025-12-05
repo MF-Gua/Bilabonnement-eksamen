@@ -15,7 +15,7 @@ public class CurrentLeaseController {
     }
 
     // Used to show current leases
-    @GetMapping("/current")
+    @GetMapping({"/current", "/currentleasingcontracts"})
     public String showCurrentLeases(Model model) {
         var currentLeases = leaseService.getCurrentLeases();
         model.addAttribute("currentLeases", currentLeases);
