@@ -8,8 +8,19 @@
 <body>
 
 <header class ="header" th:fragment="header">
-   <div>
-    <img class="logo" th:src="@{/images/logo.png}" alt="MySite Logo">
+   <div class="logo" aria-label="Bilabonnement logo">
+     <svg width="180" height="54" viewBox="0 0 180 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+       <g>
+         <circle cx="22" cy="27" r="14" stroke="black" stroke-width="3"/>
+         <circle cx="22" cy="27" r="3" fill="#1892C3"/>
+         <line x1="22" y1="15" x2="22" y2="27" stroke="#1892C3" stroke-width="3" stroke-linecap="round"/>
+         <line x1="14.5" y1="17" x2="11" y2="12" stroke="black" stroke-width="3" stroke-linecap="round"/>
+         <line x1="30" y1="17" x2="33.5" y2="12" stroke="black" stroke-width="3" stroke-linecap="round"/>
+       </g>
+       <text x="44" y="30" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="700" fill="#2B2B2B">BIL</text>
+       <text x="73" y="30" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#2B2B2B">ABONNEMENT</text>
+       <text x="44" y="44" font-family="Georgia, 'Times New Roman', serif" font-size="12" font-weight="600" fill="#4B4B4B">K.W. BRUUN</text>
+     </svg>
    </div>
   <nav class="nav-bar">
       <ul class="nav-links">
