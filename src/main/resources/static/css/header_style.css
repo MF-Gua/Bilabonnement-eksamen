@@ -14,11 +14,14 @@ body{
 }
 
 .logo{
-    max-height: 80px;
-    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 90px;
+    max-width: 360px;
     width: auto;
     height: auto;
-    padding: 10px 40px 10px 10px;
+    padding: 8px 40px 8px 10px;
     flex: 0 0 auto;
     margin-right: 0;
 }
