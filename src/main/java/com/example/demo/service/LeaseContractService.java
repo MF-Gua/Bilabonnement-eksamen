@@ -34,6 +34,16 @@ public class LeaseContractService {
         return leaseContractRepository.findByStartDateLessThanEqualAndEndDateGreaterThanEqual(today, today);
     }
 
+    // Calculates the total price of all leases in the database
+    public double getAllLeasesTotalPrice() {
+        return leaseContractRepository.sumAllTotalPrices();
+    }
+
+    // Counts all leases in the database
+    public long getAllLeasesCount() {
+        return leaseContractRepository.count();
+    }
+
     // Calculates the total price of all currently active lease contracts
     public double getCurrentLeasesTotalPrice() {
         return getCurrentLeases().stream()

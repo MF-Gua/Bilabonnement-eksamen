@@ -21,6 +21,8 @@ public class CurrentLeaseController {
         model.addAttribute("currentLeases", currentLeases);
         model.addAttribute("currentLeasesTotalPrice", leaseContractService.getCurrentLeasesTotalPrice());
         model.addAttribute("currentLeasesCount", currentLeases.size());
+        model.addAttribute("allLeasesTotalPrice", leaseContractService.getAllLeasesTotalPrice());
+        model.addAttribute("allLeasesCount", leaseContractService.getAllLeasesCount());
         return "pages/currentleasingcontracts";
     }
 }

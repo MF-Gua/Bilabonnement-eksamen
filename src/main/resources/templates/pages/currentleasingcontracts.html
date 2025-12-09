@@ -59,6 +59,14 @@
           <span class="stat-label">Totale antal af udlejede køretøjer:</span>
           <span class="stat-value" th:text="${currentLeasesCount}">0</span>
         </div>
+        <div class="stat-item">
+          <span class="stat-label">Total pris for alle kontrakter i databasen:</span>
+          <span class="stat-value" th:text="${#numbers.formatDecimal(allLeasesTotalPrice, 0, 'POINT', 2, 'POINT') + ' kr.'}">0.00 kr.</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Totalt antal kontrakter i databasen:</span>
+          <span class="stat-value" th:text="${allLeasesCount}">0</span>
+        </div>
       </div>
     </aside>
   </main>

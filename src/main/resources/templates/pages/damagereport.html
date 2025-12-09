@@ -17,29 +17,8 @@
     <link th:href="@{/css/damagereport_style.css}" rel="stylesheet">
 </head>
 <body>
-    <!-- Main header section with logo, navigation, and logout button -->
-    <header class="main-header">
-        <div class="header-content">
-            <!-- Logo section with icon and company name -->
-            <div class="logo-section">
-                <div class="logo-icon">🕐</div>
-                <div class="logo-text">
-                    <div class="logo-main">BILABONNEMENT</div>
-                    <div class="logo-sub">K.W. BRUUN</div>
-                </div>
-            </div>
-            
-            <!-- Navigation menu with links to different pages -->
-            <nav class="header-nav">
-                <a th:href="@{/lease}" class="nav-btn">Opret Lejekontrakt</a>
-                <a th:href="@{/damagereport}" class="nav-btn active">Registrer skade</a>
-                <a th:href="@{/currentleasingcontracts}" class="nav-btn">Se nuværende udlejninger</a>
-            </nav>
-            
-            <!-- Logout button positioned on the right side of header -->
-            <button class="logout-btn">Log ud</button>
-        </div>
-    </header>
+    <!-- Shared global header for consistent navigation -->
+    <div th:replace="~{Globals/header :: header}"></div>
 
     <!-- Main content area for the damage report page -->
     <main class="damage-report-page">
