@@ -37,25 +37,25 @@ public class LeaseContractController {
     public String showCreateLeaseForm(
             // Query parameters to pass data to thymeleaf template
             @RequestParam(value = "customerId", required = false) Long customerId,
-            @RequestParam(value = "vinId", required = false) String vinId,
+            @RequestParam(value = "registrationNo", required = false) String registrationNo,
             Model model) {
 
         // Loads all customers and vehicles sorted for dropdown menu
         var customers = customerRepository.findAll(Sort.by("firstName"));
-        var vehicles = vehicleRepository.findAll(Sort.by("registrationNo"));
+        var vehicles = vehicleRepository.findAll(Sort.by("vin"));
 
         // This makes the leaseform data as an object for the thymeleaf form
         LeaseContractModel leaseForm = new LeaseContractModel();
         if (customerId != null) leaseForm.setCustomerId(customerId);
-        if (vinId != null) leaseForm.setVinId(vinId);
+        if (registrationNo != null) leaseForm.setRegistrationNo(registrationNo);
 
         // This finds the customer and vehicle data in the database
         CustomerModel selectedCustomer = (customerId != null)
                 ? customerRepository.findById(customerId).orElse(null)
                 : null;
 
-        Vehicle selectedVehicle = (vinId != null)
-                ? vehicleRepository.findById(vinId).orElse(null)
+        Vehicle selectedVehicle = (registrationNo != null)
+                ? vehicleRepository.findById(registrationNo).orElse(null)
                 : null;
 
         // This puts all data to the model and returns the view input data for thymeleaf
@@ -76,7 +76,7 @@ public class LeaseContractController {
         CustomerModel customer = customerRepository.findById(leaseForm.getCustomerId())
                 .orElseThrow(() -> new IllegalArgumentException("Customer not found"));
 
-        Vehicle vehicle = vehicleRepository.findById(leaseForm.getVinId())
+        Vehicle vehicle = vehicleRepository.findById(leaseForm.getRegistrationNo())
                 .orElseThrow(() -> new IllegalArgumentException("Vehicle not found"));
 
         // Attaches customer and vehicle data to the lease entity

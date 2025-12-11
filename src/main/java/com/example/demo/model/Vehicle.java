@@ -8,12 +8,11 @@ import jakarta.persistence.*;
 public class Vehicle {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "vin_id")
-    private String vinId;
-
-    @Column(name = "registration_no", unique = true, nullable = false, length = 10)
+    @Column(name = "registration_no", nullable = false, length = 30)
     private String registrationNo;
+
+    @Column(name = "vin", unique = true, nullable = false, length = 30)
+    private String vin;
 
     @Column(name = "brand", nullable = false, length = 30)
     private String brand;
@@ -28,21 +27,21 @@ public class Vehicle {
     public Vehicle() {
     }
 
-    public Vehicle(String vinId, String registrationNo, String brand, String model, int modelYear) {
-        this.vinId = vinId;
+    public Vehicle(String registrationNo, String vin, String brand, String model, int modelYear) {
         this.registrationNo = registrationNo;
+        this.vin = vin;
         this.brand = brand;
         this.model = model;
         this.modelYear = modelYear;
     }
 
     // Getters and Setters
-    public String getVinId() {
-        return vinId;
+    public String getVin() {
+        return vin;
     }
 
-    public void setVinId(String vinId) {
-        this.vinId = vinId;
+    public void setVin(String vinId) {
+        this.vin = vinId;
     }
 
     public String getRegistrationNo() {
@@ -80,8 +79,8 @@ public class Vehicle {
     @Override
     public String toString() {
         return "Vehicle{" +
-                "vinId=" + vinId +
-                ", registrationNo='" + registrationNo + '\'' +
+                "registrationNo='" + registrationNo + '\'' +
+                ", vin='" + vin + '\'' +
                 ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", modelYear=" + modelYear +

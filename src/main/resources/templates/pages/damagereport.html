@@ -40,8 +40,8 @@
                             <option value="" disabled
                                     th:selected="${#strings.isEmpty(damageReport.vinId)}">Vælg stelnummer</option>
                             <option th:each="vehicle : ${vehicles}"
-                                    th:value="${vehicle.vinId}"
-                                    th:text="${vehicle.vinId + ' - ' + vehicle.brand + ' ' + vehicle.model}">
+                                    th:value="${vehicle.vin}"
+                                    th:text="${vehicle.vin + ' - ' + vehicle.brand + ' ' + vehicle.model}">
                             </option>
                         </select>
                     </div>

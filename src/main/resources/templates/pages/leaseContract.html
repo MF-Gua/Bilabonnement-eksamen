@@ -45,18 +45,18 @@
 
             <div style="flex: 1;">
                 <!-- dropdown menu for vehicle -->
-                <label for="vehicleSelect">Vælg køretøj (reg. nr.)</label>
-                <select id="vehicleSelect" name="vinId">
+                <label for="vehicleSelect">Vælg køretøj (stelnummer/vin)</label>
+                <select id="vehicleSelect" name="registrationNo">
                     <!-- Placeholder if no vehicle selected -->
                     <option value=""
                             th:text="'-- vælg køretøj --'"
-                            th:selected="${leaseForm.vinId == null}"></option>
+                            th:selected="${leaseForm.registrationNo == null}"></option>
 
                     <!-- Dropdown options sorted by controller by registration number and shows registration number, brand and model -->
                     <option th:each="v : ${vehicles}"
-                            th:value="${v.vinId}"
-                            th:text="${v.registrationNo + ' - ' + v.brand + ' ' + v.model}"
-                            th:selected="${leaseForm.vinId == v.vinId}">
+                            th:value="${v.registrationNo}"
+                            th:text="${v.vin + ' - ' + v.registrationNo + ' - ' + v.brand + ' ' + v.model + ' ' + v.modelYear}"
+                            th:selected="${leaseForm.registrationNo == v.registrationNo}">
                     </option>
                 </select>
             </div>
@@ -73,7 +73,7 @@
 
         <!-- Hidden fields to post ids -->
         <input type="hidden" th:field="*{customerId}">
-        <input type="hidden" th:field="*{vinId}">
+        <input type="hidden" th:field="*{registrationNo}">
 
         <div class="form-grid">
 
@@ -202,7 +202,8 @@
         <!-- So disabled button if no customer or vehicle has been selected in the dropdown menu -->
         <div class="actions">
             <button type="submit" class="btn btn-primary btn-big"
-                    th:disabled="${leaseForm.customerId == null or leaseForm.vinId == null}">
+                    th:disabled="${leaseForm.customerId == null or leaseForm.customerId == ''
+                      or leaseForm.registrationNo == null or leaseForm.registrationNo == ''}">
                 Opret lejekontrakt
             </button>
         </div>

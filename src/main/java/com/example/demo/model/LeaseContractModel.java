@@ -18,7 +18,7 @@ public class LeaseContractModel {
     private CustomerModel customer;
 
     @ManyToOne
-    @JoinColumn(name = "vin_id")
+    @JoinColumn(name = "registration_no")
     private Vehicle vehicle;
     @Column(name = "start_date")
     private LocalDate startDate;
@@ -33,7 +33,10 @@ public class LeaseContractModel {
     private Long customerId;
 
     @Transient
-    private String vinId;
+    private String registrationNo;
+
+    public String getRegistrationNo() { return registrationNo; }
+    public void setRegistrationNo(String registrationNo) { this.registrationNo = registrationNo; }
 
 
     public LeaseContractModel() {
@@ -100,8 +103,5 @@ public class LeaseContractModel {
 
     public Long getCustomerId() { return customerId; }
     public void setCustomerId(Long customerId) { this.customerId = customerId; }
-
-    public String getVinId() { return vinId; }
-    public void setVinId(String vinId) { this.vinId = vinId; }
 
 }
