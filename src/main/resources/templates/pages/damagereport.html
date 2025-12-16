@@ -36,6 +36,8 @@
                     <!-- Vehicle selector (stored as registration_no in DamageReport) -->
                     <div class="form-group">
                         <label for="registrationNo">Registreringsnummer (viser også VIN)</label>
+                        <!-- Bil vælges via registrationNo (nummerplade).
+                             Vi gemmer registration_no i DamageReport fordi DB bruger den som foreign key til Vehicle. -->
                         <select th:field="*{registrationNo}" id="registrationNo" required>
                             <option value="" disabled
                                     th:selected="${#strings.isEmpty(damageReport.registrationNo)}">Vælg bil</option>
@@ -73,8 +75,12 @@
                     
                     <!-- Hidden fields for backend processing - not visible to user -->
                     <!-- Lease ID: Links damage report to a specific lease contract -->
+                    <!-- leaseId kobler skadesrapporten til en lejekontrakt.
+                         DB kræver lease_id (NOT NULL + foreign key til LeaseContract). -->
                     <input type="hidden" th:field="*{leaseId}" id="leaseId" th:value="1">
                     <!-- End mileage: Final kilometers when damage was reported -->
+                    <!-- kmSlut og repairCost sendes som hidden fields til backend.
+                         repairCost opdateres af JavaScript ud fra de tilføjede fejl/priser. -->
                     <input type="hidden" th:field="*{kmSlut}" id="kmSlut" th:value="0">
                     <!-- Repair cost: Automatically calculated from damage list, updated via JavaScript -->
                     <input type="hidden" th:field="*{repairCost}" id="repair_cost" th:value="0.00">

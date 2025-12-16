@@ -64,14 +64,20 @@ CREATE TABLE DamageReport
     damage_date     DATE                               NOT NULL,
     description     VARCHAR(255)                       NOT NULL,
     repair_cost     DECIMAL(10, 2)                     NOT NULL,
+    -- Bil-reference: gemmes som registration_no (nummerplade) og peger på Vehicle(registration_no)
     registration_no VARCHAR(30)                        NOT NULL,
+    -- Medarbejder der registrerer skaden
     employee_id     INT(10)                            NOT NULL,
+    -- Lejekontrakt som skaden hører til (må ikke være NULL)
     lease_id        INT(10)                            NOT NULL,
     km_slut         INT(10)                            NOT NULL,
     CONSTRAINT fk_damage_vehicle
+        -- Sikrer at bilen findes i databasen
         FOREIGN KEY (registration_no) REFERENCES Vehicle (registration_no),
     CONSTRAINT fk_damage_employee
+        -- Sikrer at medarbejderen findes i databasen
         FOREIGN KEY (employee_id) REFERENCES Employee (employee_id),
     CONSTRAINT fk_damage_lease
+        -- Sikrer at lejekontrakten findes i databasen (ellers må skadesrapporten ikke oprettes)
         FOREIGN KEY (lease_id) REFERENCES LeaseContract (lease_id)
 );

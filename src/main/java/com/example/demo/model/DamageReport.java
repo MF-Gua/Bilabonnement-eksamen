@@ -28,6 +28,8 @@ public class DamageReport {
     @Column(name = "repair_cost", nullable = false)
     private double repairCost;
 
+    // Vi gemmer registrationNo (nummerplade) fordi DB-kolonnen hedder registration_no
+    // og er foreign key til Vehicle(registration_no). VIN bruges kun til visning/sortering.
     @Column(name = "registration_no", nullable = false, length = 30)
     private String registrationNo;
 
