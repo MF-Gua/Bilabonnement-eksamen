@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823522d-51cc-4e50-b2a6-5b14f920f18c" name="Changes" comment="gjordt så testen bruger test application properties" />
+    <list default="true" id="d823522d-51cc-4e50-b2a6-5b14f920f18c" name="Changes" comment="tilføjet h2 dependency" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,7 +183,7 @@
       <workItem from="1765816650349" duration="1416000" />
       <workItem from="1765820889897" duration="8905000" />
       <workItem from="1765891324823" duration="4180000" />
-      <workItem from="1765965743936" duration="3185000" />
+      <workItem from="1765965743936" duration="3633000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml fix">
       <option name="closed" value="true" />
@@ -305,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765968937347</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="tilføjet h2 dependency">
+      <option name="closed" value="true" />
+      <created>1765969338330</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1765969338330</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +333,8 @@
     <MESSAGE value="forsøg med h2" />
     <MESSAGE value="reverted" />
     <MESSAGE value="gjordt så testen bruger test application properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="gjordt så testen bruger test application properties" />
+    <MESSAGE value="tilføjet h2 dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="tilføjet h2 dependency" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
