@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS bilabbonnementdb;
+
+USE bilabbonnementdb;
+
 -- foreign keys correct order to drop tables
 DROP TABLE IF EXISTS damagereport;
 DROP TABLE IF EXISTS leasecontract;
