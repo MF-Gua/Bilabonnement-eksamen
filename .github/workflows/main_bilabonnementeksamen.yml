@@ -27,7 +27,7 @@ jobs:
       - name: Build with Maven
         env: 
         SPRING_DATASOURCE_URL: jdbc:mysql://${{secrets.DB_URL}}
-        SPRIN_DATASOURCE_USERNAME: ${{secrets.DB_USER}}
+        SPRING_DATASOURCE_USERNAME: ${{secrets.DB_USER}}
         SPRING_DATASOURCE_PASSWORD: ${{secrets.DB_PASSWORD}}
         run: mvn clean install
 
@@ -66,3 +66,4 @@ jobs:
           package: '*.jar'
 
           
+
