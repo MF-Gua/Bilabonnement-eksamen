@@ -25,6 +25,10 @@ jobs:
           distribution: 'microsoft'
 
       - name: Build with Maven
+        env: 
+        SPRING_DATASOURCE_URL: jdbc:mysql://${{secrets.DB_URL}}
+        SPRIN_DATASOURCE_USERNAME: ${{secrets.DB_USER}}
+        SPRING_DATASOURCE_PASSWORD: ${{secrets.DB_PASSWORD}}
         run: mvn clean install
 
       - name: Upload artifact for deployment job
@@ -60,4 +64,5 @@ jobs:
           app-name: 'bilabonnementeksamen'
           slot-name: 'Production'
           package: '*.jar'
+
           
