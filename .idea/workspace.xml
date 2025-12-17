@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823522d-51cc-4e50-b2a6-5b14f920f18c" name="Changes" comment="fixed database for vehicle and changed primary to registration_NO and alternate key/ unique for vin">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d823522d-51cc-4e50-b2a6-5b14f920f18c" name="Changes" comment="databaseconnection virker">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +180,7 @@
       <workItem from="1765816650349" duration="1416000" />
       <workItem from="1765820889897" duration="8905000" />
       <workItem from="1765891324823" duration="4180000" />
-      <workItem from="1765965743936" duration="884000" />
+      <workItem from="1765965743936" duration="1192000" />
     </task>
     <task id="LOCAL-00001" summary="workspace.xml fix">
       <option name="closed" value="true" />
@@ -242,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765422948354</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="databaseconnection virker">
+      <option name="closed" value="true" />
+      <created>1765966992325</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765966992325</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +259,8 @@
     <MESSAGE value="logo fix" />
     <MESSAGE value="fixed logo left padding" />
     <MESSAGE value="fixed database for vehicle and changed primary to registration_NO and alternate key/ unique for vin" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed database for vehicle and changed primary to registration_NO and alternate key/ unique for vin" />
+    <MESSAGE value="databaseconnection virker" />
+    <option name="LAST_COMMIT_MESSAGE" value="databaseconnection virker" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
